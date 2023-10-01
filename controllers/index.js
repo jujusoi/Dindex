@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { TimePeriod, Dinosaur, Continent, Diets } = require('../models');
+const { TimePeriod, Dinosaur, Continent, Diets, Family } = require('../models');
 
 router.get('/', async (req, res) => {
     try {
@@ -14,8 +14,12 @@ router.get('/', async (req, res) => {
                     attributes: ['continent_name'],
                 },
                 {
+                    model: Family,
+                    attributes: ['family_name'],
+                },
+                {
                     model: Diets,
-                        attributes: ['diet_name'],
+                    attributes: ['diet_name'],
                 },
             ],
         }

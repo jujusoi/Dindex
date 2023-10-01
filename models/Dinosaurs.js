@@ -38,6 +38,14 @@ Dinosaur.init({
             key: 'id',
         },
     },
+    family_from: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'family',
+            key: 'id',
+        },
+    },
 },
 {
     sequelize,

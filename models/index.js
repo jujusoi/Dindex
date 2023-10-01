@@ -2,6 +2,7 @@ const TimePeriod = require('./timePeriods');
 const Dinosaur = require('./Dinosaurs');
 const Continent = require('./Continents');
 const Diets = require('./Diets');
+const Family = require('./Families');
 
 TimePeriod.hasMany(Dinosaur, {
     foreignKey: 'period',
@@ -27,9 +28,18 @@ Dinosaur.belongsTo(Diets, {
     foreignKey: 'diet_on',
 });
 
+Family.hasMany(Dinosaur, {
+    foreignKey: 'family_from',
+});
+
+Dinosaur.belongsTo(Family, {
+    foreignKey: 'family_from',
+});
+
 module.exports = { 
     TimePeriod,
     Dinosaur,
     Continent,
     Diets,
+    Family,
 }

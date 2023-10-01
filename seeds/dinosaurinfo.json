@@ -1,8 +1,16 @@
 [
     {
-        "dinosaur_name": "Utahraptor",
+        "dinosaur_name": "Tyrannosaurus Rex",
         "period": 1,
         "continent_on": 1,
-        "diet_on": 1
+        "diet_on": 1,
+        "family_from": 1
+    },
+    {
+        "dinosaur_name": "Triceratops",
+        "period": 1,
+        "continent_on": 1,
+        "diet_on": 2,
+        "family_from": 2
     }
 ]
