@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const { TimePeriod, Dinosaur, Continent, Diets, Family } = require('../models');
+const { TimePeriod, Dinosaur, Continent, Diets, Family, IntroductionImages, PhysicalityImages } = require('../models');
+const search = require('./searchExample');
 
 router.get('/', async (req, res) => {
     try {
@@ -21,6 +22,12 @@ router.get('/', async (req, res) => {
                     model: Diets,
                     attributes: ['diet_name'],
                 },
+                {
+                    model: IntroductionImages,
+                },
+                {
+                    model: PhysicalityImages,
+                },
             ],
         }
         )
@@ -33,5 +40,7 @@ router.get('/', async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+router.use('/search', search);
 
 module.exports = router;

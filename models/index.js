@@ -3,6 +3,8 @@ const Dinosaur = require('./Dinosaurs');
 const Continent = require('./Continents');
 const Diets = require('./Diets');
 const Family = require('./Families');
+const IntroductionImages = require('./introductionImages');
+const PhysicalityImages = require('./physicalityImages');
 
 TimePeriod.hasMany(Dinosaur, {
     foreignKey: 'period',
@@ -36,10 +38,30 @@ Dinosaur.belongsTo(Family, {
     foreignKey: 'family_from',
 });
 
+Dinosaur.hasMany(IntroductionImages, {
+    foreignKey: 'dinosaur_reference',
+    onDelete: 'CASCADE',
+});
+
+IntroductionImages.belongsTo(Dinosaur, {
+    foreignKey: 'dinosaur_reference',
+});
+
+Dinosaur.hasMany(PhysicalityImages, {
+    foreignKey: 'dinosaur_reference',
+    onDelete: 'CASCADE',
+});
+
+PhysicalityImages.belongsTo(Dinosaur, {
+    foreignKey: 'dinosaur_reference',
+});
+
 module.exports = { 
     TimePeriod,
     Dinosaur,
     Continent,
     Diets,
     Family,
+    IntroductionImages,
+    PhysicalityImages,
 }

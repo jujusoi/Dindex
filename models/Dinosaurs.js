@@ -70,6 +70,34 @@ Dinosaur.init({
             key: 'id',
         },
     },
+    introduction: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+    },
+    physicality: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+    },
+    diet_description: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+    },
+    habitat: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+    },
+    behaviour: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+    },
+    fossils: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+    },
+    profile_image: {
+        type: DataTypes.STRING(1000),
+        allowNull: false,
+    },
 },
 {
     sequelize,

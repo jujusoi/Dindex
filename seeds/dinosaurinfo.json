@@ -10,19 +10,13 @@
         "class": "Reptilia",
         "order": "Saurischia",
         "suborder": "Theropoda",
-        "genus": "Tyrannosaurus"
-    },
-    {
-        "dinosaur_name": "Triceratops",
-        "period": 1,
-        "continent_on": 1,
-        "diet_on": 2,
-        "family_from": 2,
-        "kingdom": "Animalia",
-        "phylum": "Chordata",
-        "class": "Reptilia",
-        "order": "Ornithischia",
-        "suborder": "Cerapoda",
-        "genus": "Triceratops"
+        "genus": "Tyrannosaurus",
+        "introduction": "Example introduction",
+        "physicality": "Example physicality",
+        "diet_description": "Example diet description",
+        "habitat": "Example habitat",
+        "behaviour": "Example behaviour",
+        "fossils": "Example fossils",
+        "profile_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Tyrannosaurus_Rex_Holotype.jpg/220px-Tyrannosaurus_Rex_Holotype.jpg"
     }
 ]
