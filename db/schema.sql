@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS `dinodex_db`;
+CREATE DATABASE `dinodex_db`;

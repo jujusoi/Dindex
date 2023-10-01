@@ -9,7 +9,7 @@ const sequelizeStore = require('connect-session-sequelize')(session.Store);
 const routes = require('./controllers');
 
 const app = express();
-const PORT = process.env.PORT || 6666;
+const PORT = process.env.PORT || 1234;
 
 const sess = {
     secret: 'jnaeiafbknanawe',
