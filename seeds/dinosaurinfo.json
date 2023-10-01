@@ -4,13 +4,25 @@
         "period": 1,
         "continent_on": 1,
         "diet_on": 1,
-        "family_from": 1
+        "family_from": 1,
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Reptilia",
+        "order": "Saurischia",
+        "suborder": "Theropoda",
+        "genus": "Tyrannosaurus"
     },
     {
         "dinosaur_name": "Triceratops",
         "period": 1,
         "continent_on": 1,
         "diet_on": 2,
-        "family_from": 2
+        "family_from": 2,
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Reptilia",
+        "order": "Ornithischia",
+        "suborder": "Cerapoda",
+        "genus": "Triceratops"
     }
 ]

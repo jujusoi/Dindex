@@ -14,6 +14,38 @@ Dinosaur.init({
         type: DataTypes.STRING,
         allowNull: false,
     },
+    kingdom: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    phylum: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    class: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    order: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    suborder: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    family_from: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'family',
+            key: 'id',
+        },
+    },
+    genus: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
     period: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -35,14 +67,6 @@ Dinosaur.init({
         allowNull: false,
         references: {
             model: 'diet',
-            key: 'id',
-        },
-    },
-    family_from: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        references: {
-            model: 'family',
             key: 'id',
         },
     },
