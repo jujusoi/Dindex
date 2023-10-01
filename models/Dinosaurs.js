@@ -30,6 +30,14 @@ Dinosaur.init({
             key: 'id',
         },
     },
+    diet_on: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'diet',
+            key: 'id',
+        },
+    },
 },
 {
     sequelize,

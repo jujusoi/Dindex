@@ -1,10 +1,11 @@
 const sequelize = require('../config/connection');
 
-const { TimePeriod, Dinosaur, Continent } = require('../models');
+const { TimePeriod, Dinosaur, Continent, Diets } = require('../models');
 
 const timeperiodseeddata = require('./timeperiodinfo.json');
 const dinosaurseeddata = require('./dinosaurinfo.json');
 const continentseeddata = require('./continentInfo.json');
+const dietseeddata = require('./dietInfo.json');
 
 const seed = async () => {
     try {
@@ -12,6 +13,7 @@ const seed = async () => {
 
         await TimePeriod.bulkCreate(timeperiodseeddata);
         await Continent.bulkCreate(continentseeddata);
+        await Diets.bulkCreate(dietseeddata);
         await Dinosaur.bulkCreate(dinosaurseeddata);
         
         console.log('Database seeded!');

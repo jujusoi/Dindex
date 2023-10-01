@@ -1,0 +1,26 @@
+[
+    {
+        "diet_name": "Carnivore",
+        "diet_description": "Carnivores are animals that eat other animals. They are also called predators. Carnivores usually have sharp teeth and claws that help them catch their food. Some examples of carnivores are lions, tigers, snakes, and sharks."
+    },
+    {
+        "diet_name": "Herbivore",
+        "diet_description": "Herbivores are animals that eat plants. They are also called primary consumers. Herbivores usually have teeth or beaks that help them rip, tear, or chew plants. Some examples of herbivores are deer, rabbits, cows, sheep, and giraffes."
+    }, 
+    {
+        "diet_name": "Omnivore",
+        "diet_description": "Omnivores are animals that eat both plants and animals. They are also called secondary consumers. Omnivores usually have a variety of teeth that help them rip, tear, chew, and grind their food. Some examples of omnivores are bears, raccoons, pigs, and humans."
+    },
+    {
+        "diet_name": "Piscivore",
+        "diet_description": "Piscivores are animals that eat fish. They are also called secondary consumers. Piscivores usually have a variety of teeth that help them rip, tear, chew, and grind their food. Some examples of piscivores are bears, raccoons, pigs, and humans."
+    }, 
+    {
+        "diet_name": "Herivore, Filter Feeders",
+        "diet_description": "Herbivorous filter feeding is a dietary strategy where animals primarily consume tiny plant-based organisms, like plankton or algae, by filtering them from the water or air. This method allows them to extract nutrients from small, suspended particles while avoiding larger prey."
+    },
+    {
+        "diet_name": "Carnivore, Filter Feeders",
+        "diet_description": "Carnivorous filter feeding is a dietary strategy in which animals primarily consume small aquatic or airborne animals by filtering them from the water or air. This feeding method enables them to capture and consume prey that is suspended in the environment, often using specialized structures or mechanisms for filtering."
+    }
+]
